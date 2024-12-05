@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Structures and Algorithms Overview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .table-section {
+            margin-bottom: 30px;
+            overflow-x: auto;
+        }
+        
+        .table {
+            width: 100%;
+            min-width: 600px;
+            border-collapse: collapse;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .table th, .table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        
+        .table th {
+            background-color: #f4f4f4;
+        }
+
+        .table td.clickable {
+            cursor: pointer;
+        }
+
+        .table td.clickable:hover {
+            background-color: #f0f0f0;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: #444;
+            margin-top: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eee;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .table th, .table td {
+                padding: 6px;
+                font-size: 14px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Data Structures and Algorithms Overview</h1>
+        <div id="content"></div>
+    </div>
+
+    <script>
+        let jsonData = null;
+
+        async function loadData() {
+            try {
+                const response = await fetch('CHECK.json');
+                jsonData = await response.json();
+                renderContent(jsonData);
+            } catch (error) {
+                console.error('Error loading data:', error);
+            }
+        }
+
+        async function saveData() {
+            try {
+                const response = await fetch('CHECK.json', {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(jsonData, null, 2)
+                });
+                if (!response.ok) {
+                    throw new Error('Failed to save data');
+                }
+            } catch (error) {
+                console.error('Error saving data:', error);
+            }
+        }
+
+        function toggleDifficulty(category, topic, difficulty) {
+            if (typeof jsonData[category][topic] === 'object') {
+                jsonData[category][topic][difficulty] = !jsonData[category][topic][difficulty];
+                saveData();
+                renderContent(jsonData);
+            }
+        }
+
+        function renderContent(data) {
+            const contentDiv = document.getElementById('content');
+            contentDiv.innerHTML = ''; // Clear existing content
+            
+            for (const [category, topics] of Object.entries(data)) {
+                if (typeof topics === 'object' && !Array.isArray(topics)) {
+                    const section = document.createElement('div');
+                    section.className = 'table-section';
+                    
+                    const heading = document.createElement('h2');
+                    heading.textContent = category;
+                    section.appendChild(heading);
+                    
+                    const table = document.createElement('table');
+                    table.className = 'table';
+                    
+                    // Create table header
+                    const thead = document.createElement('thead');
+                    thead.innerHTML = `
+                        <tr>
+                            <th>Topic</th>
+                            <th>Easy</th>
+                            <th>Medium</th>
+                            <th>Hard</th>
+                        </tr>
+                    `;
+                    table.appendChild(thead);
+                    
+                    // Create table body
+                    const tbody = document.createElement('tbody');
+                    for (const [topic, difficulties] of Object.entries(topics)) {
+                        if (typeof difficulties === 'object' && !Array.isArray(difficulties)) {
+                            const row = document.createElement('tr');
+                            row.innerHTML = `
+                                <td>${topic}</td>
+                                <td class="clickable" onclick="toggleDifficulty('${category}', '${topic}', 'easy')">${difficulties.easy ? '✓' : ''}</td>
+                                <td class="clickable" onclick="toggleDifficulty('${category}', '${topic}', 'medium')">${difficulties.medium ? '✓' : ''}</td>
+                                <td class="clickable" onclick="toggleDifficulty('${category}', '${topic}', 'hard')">${difficulties.hard ? '✓' : ''}</td>
+                            `;
+                            tbody.appendChild(row);
+                        }
+                    }
+                    table.appendChild(tbody);
+                    section.appendChild(table);
+                    contentDiv.appendChild(section);
+                }
+            }
+        }
+
+        // Load data when page loads
+        document.addEventListener('DOMContentLoaded', loadData);
+    </script>
+</body>
+</html>

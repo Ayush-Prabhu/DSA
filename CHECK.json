@@ -1,0 +1,215 @@
+{
+    "Arrays": {
+      "Basic Operations": { "easy": true, "medium": false, "hard": false },
+      "Multi-dimensional Arrays": { "easy": false, "medium": true, "hard": false },
+      "Dynamic Arrays": { "easy": true, "medium": true, "hard": false }
+    },
+    "Linked Lists": {
+      "Singly Linked List": { "easy": true, "medium": false, "hard": false },
+      "Doubly Linked List": { "easy": false, "medium": true, "hard": false },
+      "Circular Linked List": { "easy": false, "medium": true, "hard": false },
+      "Operations": { "easy": true, "medium": false, "hard": false }
+    },
+    "Stacks": {
+      "Basic Operations": { "easy": true, "medium": false, "hard": false },
+      "Applications": { "easy": false, "medium": true, "hard": false }
+    },
+    "Queues": {
+      "Basic Operations": { "easy": true, "medium": false, "hard": false },
+      "Circular Queue": { "easy": false, "medium": true, "hard": false },
+      "Priority Queue": { "easy": false, "medium": true, "hard": false },
+      "Deque": { "easy": false, "medium": true, "hard": false }
+    },
+    "Strings": {
+      "String Matching Algorithms": { "easy": false, "medium": true, "hard": true },
+      "String Manipulation": { "easy": true, "medium": false, "hard": false },
+      "Pattern Matching": { "easy": false, "medium": true, "hard": true },
+      "Prefix and Suffix Arrays": { "easy": false, "medium": true, "hard": false }
+    },
+    "Hashing": {
+      "Hash Tables": { "easy": true, "medium": true, "hard": false },
+      "Collision Resolution": { "easy": false, "medium": true, "hard": false },
+      "Hash Functions": { "easy": false, "medium": true, "hard": true }
+    },
+    "Binary Tree": {
+      "Traversals": { "easy": true, "medium": false, "hard": false },
+      "DFS and BFS": { "easy": true, "medium": true, "hard": false },
+      "Operations": { "easy": true, "medium": false, "hard": false }
+    },
+    "Binary Search Tree (BST)": {
+      "Traversal": { "easy": true, "medium": false, "hard": false },
+      "Insertion, Deletion, Searching": { "easy": true, "medium": false, "hard": false },
+      "Balanced BSTs": { "easy": false, "medium": true, "hard": true }
+    },
+    "Heaps": {
+      "Max Heap": { "easy": false, "medium": true, "hard": false },
+      "Min Heap": { "easy": false, "medium": true, "hard": false },
+      "Heap Sort": { "easy": false, "medium": true, "hard": false }
+    },
+    "Trie": {
+      "Insertion, Search, Deletion": { "easy": false, "medium": true, "hard": false },
+      "Applications": { "easy": false, "medium": true, "hard": true }
+    },
+    "Segment Tree": {
+      "Range Queries": { "easy": false, "medium": true, "hard": true },
+      "Lazy Propagation": { "easy": false, "medium": true, "hard": true }
+    },
+    "Fenwick Tree": {
+      "Range Sum Queries and Updates": { "easy": false, "medium": true, "hard": false }
+    },
+    "AVL Trees": {
+      "Self-balancing BST": { "easy": false, "medium": true, "hard": true }
+    },
+    "Red-Black Trees": {
+      "Properties and Balancing": { "easy": false, "medium": true, "hard": true }
+    },
+    "Graph Representations": {
+      "Adjacency Matrix": { "easy": true, "medium": false, "hard": false },
+      "Adjacency List": { "easy": true, "medium": false, "hard": false }
+    },
+    "Graph Traversal": {
+      "DFS": { "easy": true, "medium": false, "hard": false },
+      "BFS": { "easy": true, "medium": false, "hard": false }
+    },
+    "Shortest Path Algorithms": {
+      "Dijkstra's Algorithm": { "easy": false, "medium": true, "hard": false },
+      "Bellman-Ford Algorithm": { "easy": false, "medium": true, "hard": false },
+      "Floyd-Warshall Algorithm": { "easy": false, "medium": true, "hard": true },
+      "A* Algorithm": { "easy": false, "medium": true, "hard": true }
+    },
+    "Minimum Spanning Tree": {
+      "Kruskal's Algorithm": { "easy": false, "medium": true, "hard": false },
+      "Prim's Algorithm": { "easy": false, "medium": true, "hard": false }
+    },
+    "Topological Sorting": {
+      "Kahn's Algorithm": { "easy": false, "medium": true, "hard": false },
+      "DFS-based Topological Sort": { "easy": false, "medium": true, "hard": false }
+    },
+    "Strongly Connected Components (SCC)": {
+      "Kosaraju's Algorithm": { "easy": false, "medium": true, "hard": false },
+      "Tarjan's Algorithm": { "easy": false, "medium": true, "hard": false }
+    },
+    "Network Flow Algorithms": {
+      "Ford-Fulkerson Algorithm": { "easy": false, "medium": true, "hard": true },
+      "Edmonds-Karp Algorithm": { "easy": false, "medium": true, "hard": true }
+    },
+    "Union-Find (Disjoint Set Union, DSU)": {
+      "Path Compression": { "easy": false, "medium": true, "hard": false },
+      "Union by Rank": { "easy": false, "medium": true, "hard": false }
+    },
+    "Sorting Algorithms": {
+      "Quick Sort": { "easy": false, "medium": true, "hard": false },
+      "Merge Sort": { "easy": false, "medium": true, "hard": false },
+      "Heap Sort": { "easy": false, "medium": true, "hard": false },
+      "Bubble Sort": { "easy": true, "medium": false, "hard": false },
+      "Insertion Sort": { "easy": true, "medium": false, "hard": false },
+      "Selection Sort": { "easy": true, "medium": false, "hard": false },
+      "Counting Sort": { "easy": false, "medium": true, "hard": false },
+      "Radix Sort": { "easy": false, "medium": true, "hard": false },
+      "Bucket Sort": { "easy": false, "medium": true, "hard": false }
+    },
+    "Searching Algorithms": {
+      "Linear Search": { "easy": true, "medium": false, "hard": false },
+      "Binary Search": { "easy": true, "medium": false, "hard": false },
+      "Ternary Search": { "easy": false, "medium": true, "hard": false },
+      "Exponential Search": { "easy": false, "medium": true, "hard": false },
+      "Jump Search": { "easy": false, "medium": true, "hard": false }
+    },
+    "Divide and Conquer": {
+      "Merge Sort": { "easy": false, "medium": true, "hard": false },
+      "Quick Sort": { "easy": false, "medium": true, "hard": false },
+      "Binary Search": { "easy": true, "medium": false, "hard": false },
+      "Matrix Multiplication": { "easy": false, "medium": true, "hard": true }
+    },
+    "Dynamic Programming": {
+      "Memoization": { "easy": true, "medium": false, "hard": false },
+      "Tabulation": { "easy": false, "medium": true, "hard": false },
+      "Fibonacci Sequence": { "easy": true, "medium": false, "hard": false },
+      "Coin Change Problem": { "easy": false, "medium": true, "hard": false },
+      "Longest Common Subsequence": { "easy": false, "medium": true, "hard": true },
+      "Longest Increasing Subsequence": { "easy": false, "medium": true, "hard": true },
+      "0/1 Knapsack Problem": { "easy": false, "medium": true, "hard": true },
+      "Matrix Chain Multiplication": { "easy": false, "medium": true, "hard": true },
+      "Rod Cutting": { "easy": false, "medium": true, "hard": false },
+      "Subset Sum Problem": { "easy": false, "medium": true, "hard": false }
+    },
+    "Greedy Algorithms": {
+      "Activity Selection Problem": { "easy": true, "medium": false, "hard": false },
+      "Fractional Knapsack Problem": { "easy": false, "medium": true, "hard": false },
+      "Huffman Coding": { "easy": false, "medium": true, "hard": true },
+      "Job Sequencing Problem": { "easy": false, "medium": true, "hard": false },
+      "Minimum Spanning Tree": { "easy": false, "medium": true, "hard": false },
+      "Dijkstra's Algorithm": { "easy": false, "medium": true, "hard": false }
+    },
+    "Backtracking": {
+      "N-Queens Problem": { "easy": false, "medium": true, "hard": true },
+      "Sudoku Solver": { "easy": false, "medium": true, "hard": true },
+      "Subset Generation": { "easy": true, "medium": false, "hard": false },
+      "Permutations and Combinations": { "easy": true, "medium": false, "hard": false },
+      "Graph Coloring": { "easy": false, "medium": true, "hard": true },
+      "Hamiltonian Path": { "easy": false, "medium": true, "hard": true },
+      "Rat in a Maze": { "easy": false, "medium": true, "hard": false },
+      "Subset Sum Problem": { "easy": false, "medium": true, "hard": false }
+    },
+    "Bit Manipulation": {
+      "Basic Operations": { "easy": true, "medium": false, "hard": false },
+      "Setting and Clearing Bits": { "easy": true, "medium": false, "hard": false },
+      "Count Set Bits": { "easy": true, "medium": false, "hard": false },
+      "Bitwise Hacks": { "easy": true, "medium": false, "hard": true },
+      "Parity": { "easy": true, "medium": false, "hard": false },
+      "Find Missing Number": { "easy": false, "medium": true, "hard": false },
+      "Fast Exponentiation": { "easy": false, "medium": true, "hard": true },
+      "Gray Code": { "easy": false, "medium": true, "hard": true }
+    },
+    "Mathematical Algorithms": {
+      "Prime Numbers": { "easy": true, "medium": false, "hard": false },
+      "Sieve of Eratosthenes": { "easy": false, "medium": true, "hard": false },
+      "Prime Factorization": { "easy": false, "medium": true, "hard": false },
+      "Miller-Rabin Primality Test": { "easy": false, "medium": true, "hard": true },
+      "Greatest Common Divisor": { "easy": true, "medium": false, "hard": false },
+      "Euclidean Algorithm": { "easy": false, "medium": true, "hard": false },
+      "Extended Euclidean Algorithm": { "easy": false, "medium": true, "hard": true },
+      "Modular Arithmetic": { "easy": false, "medium": true, "hard": false },
+      "Modular Exponentiation": { "easy": false, "medium": true, "hard": false },
+      "Chinese Remainder Theorem": { "easy": false, "medium": true, "hard": true },
+      "Combinatorics": { "easy": false, "medium": true, "hard": true },
+      "Pascal's Triangle": { "easy": true, "medium": false, "hard": false },
+      "Fast Exponentiation": { "easy": false, "medium": true, "hard": false }
+    },
+    "Computational Geometry": {
+      "Convex Hull": { "easy": false, "medium": true, "hard": true },
+      "Line Intersection": { "easy": false, "medium": true, "hard": false },
+      "Point in Polygon": { "easy": false, "medium": true, "hard": false },
+      "Closest Pair of Points": { "easy": false, "medium": true, "hard": true },
+      "Sweep Line Algorithms": { "easy": false, "medium": true, "hard": true }
+    },
+    "Miscellaneous": {
+      "Sparse Table": { "easy": false, "medium": true, "hard": false },
+      "Karnaugh Maps": { "easy": false, "medium": true, "hard": true },
+      "KMP Pattern Matching": { "easy": false, "medium": true, "hard": false },
+      "Rabin-Karp Algorithm": { "easy": false, "medium": true, "hard": false },
+      "Z-Algorithm": { "easy": false, "medium": true, "hard": true }
+    },
+    "Advanced Topics": {
+      "String Algorithms": {
+        "Suffix Trees": { "easy": false, "medium": false, "hard": true },
+        "Suffix Arrays": { "easy": false, "medium": true, "hard": true },
+        "Burrows-Wheeler Transform": { "easy": false, "medium": false, "hard": true }
+      },
+      "Network Flow": {
+        "Max Flow Algorithms": { "easy": false, "medium": false, "hard": true }
+      },
+      "Polynomial Multiplication": {
+        "FFT": { "easy": false, "medium": false, "hard": true },
+        "Karatsuba Algorithm": { "easy": false, "medium": true, "hard": true }
+      },
+      "Advanced Graph Algorithms": {
+        "All-Pairs Shortest Path": { "easy": false, "medium": true, "hard": true },
+        "A* Search Algorithm": { "easy": false, "medium": true, "hard": true }
+      },
+      "Randomized Algorithms": {
+        "Randomized Quick Sort": { "easy": false, "medium": true, "hard": false },
+        "Monte Carlo Method": { "easy": false, "medium": true, "hard": true }
+      }
+    }
+}
